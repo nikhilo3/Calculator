@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="cal.css" />
+</head>
+<body>
+    <header>
+        <nav >
+            <h1 id="head">Simple Calculator</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <table id="tbl">
+                <tr>
+                    <td><input type="text" name="txt" id="txt"></td>
+                </tr>
+            </table>
+            <div class="keys">
+                    <input type="button" value="clr" onclick="clears()">
+                    <input type="button" value="+/-" onclick="inputs('+/-')">
+                    <input type="button" value="%" onclick="inputs('%')">
+                    <input type="button" value="/" onclick="inputs('/')">
+                    <input type="button" value="7" onclick="inputs('7')">
+                    <input type="button" value="8" onclick="inputs('8')">
+                    <input type="button" value="9" onclick="inputs('9')">
+                    <input type="button" value="*" onclick="inputs('*')">
+                    <input type="button" value="4" onclick="inputs('4')">
+                    <input type="button" value="5" onclick="inputs('5')">
+                    <input type="button" value="6" onclick="inputs('6')">
+                    <input type="button" value="-" onclick="inputs('-')">
+                    <input type="button" value="1" onclick="inputs('1')">
+                    <input type="button" value="2" onclick="inputs('2')">
+                    <input type="button" value="3" onclick="inputs('3')">
+                    <input type="button" value="+" onclick="inputs('+')">
+                    <input type="button" value="0" onclick="inputs('0')">
+                    <input type="button" value="." onclick="inputs('.')">
+                    <input type="button" value="null">
+                    <input type="button" value="=" onclick="solve()">
+            </div>
+        </div>
+    </main>
+    <script src="cal.js"></script>
+</body>
+</html>
